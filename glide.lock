@@ -1,0 +1,19 @@
+hash: e2a5b527da19cbe177599ee3442c5121c7bb13a9a5b166d2fd6c4911a44e66fa
+updated: 2017-09-14T20:09:59.782884339+08:00
+imports:
+- name: github.com/alexflint/go-arg
+  version: cef6506c97e5731da728c374ff3523e481026423
+- name: github.com/alexflint/go-scalar
+  version: 45e5d6cd8605faef82fda2bacc59e734a0b6f1f0
+- name: github.com/go-sql-driver/mysql
+  version: a0583e0143b1624142adab07e0e97fe106d99561
+- name: golang.org/x/crypto
+  version: faadfbdc035307d901e69eea569f5dda451a3ee3
+  subpackages:
+  - curve25519
+  - ed25519
+  - ed25519/internal/edwards25519
+  - ssh
+- name: gopkg.in/go-playground/pool.v3
+  version: e73cd3a5ded835540c5cf4778488579c5b357d68
+testImports: []
