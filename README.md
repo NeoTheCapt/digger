@@ -7,7 +7,9 @@ Digger is a muti-thread LAN vulnerability scanner.
 </span><span style="color: #9876aa; font-style: italic;">----- 
 </span>
 1.port scan.
+
 2.ssh scan with specific username and password.
+
 3.mysql scan with specific username and password.Return the privileges which the account has.
 
 <span style="color: #9876aa; font-style: italic;">Usage 
@@ -22,7 +24,7 @@ Options:
   --creds CREDS          MySql credentials. [default: <span style="color: #cc7832; font-weight: bold;">[root:root root:123456]</span>]
   --threadnum THREADNUM
                          number of threads <span style="color: #cc7832; font-weight: bold;">[default: 2]
-</span>  --wordernum WORDERNUM
+</span>  --workernum WORKERNUM
                          number of workers <span style="color: #cc7832; font-weight: bold;">[default: 2]
 </span>  --timeout TIMEOUT      seconds of timeout <span style="color: #cc7832; font-weight: bold;">[default: 2]
 </span>  --help, -h             display this help and exit

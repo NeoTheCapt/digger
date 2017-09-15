@@ -15,7 +15,7 @@ type args struct {
 	PORT      []int16  `arg:"help:The ports which you want to scan"`
 	Creds     []string `arg:"help:MySql credentials."` //123:321 234:123
 	THREADNUM uint     `arg:"help:number of threads"`
-	WORDERNUM uint     `arg:"help:number of workers"`
+	WORKERNUM uint     `arg:"help:number of workers"`
 	TIMEOUT   int      `arg:"help:seconds of timeout"`
 }
 
@@ -28,7 +28,7 @@ func main() {
 	var args args
 	//set default value
 	args.THREADNUM = 2
-	args.WORDERNUM = 2
+	args.WORKERNUM = 2
 	args.TIMEOUT = 2
 	args.Creds = []string{"root:root", "root:123456"}
 	arg.MustParse(&args)
@@ -45,7 +45,7 @@ func main() {
 	case "scan":
 		var rs []utils.PortScanRs
 		ps := utils.PortScan{IPs: IPs, Ports: args.PORT,
-			ThreadNum: args.THREADNUM, WorkersNum: args.WORDERNUM,
+			ThreadNum: args.THREADNUM, WorkersNum: args.WORKERNUM,
 			Timeout: args.TIMEOUT,
 		}
 		rs = ps.ScanTargets()
